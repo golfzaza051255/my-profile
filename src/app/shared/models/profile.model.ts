@@ -37,4 +37,8 @@ export const Skills = {
     node: 'node.js',
     ts: '.ts'
   },
+  tools: {
+    git: 'github',
+    node: 'node.js'
+  }
 };

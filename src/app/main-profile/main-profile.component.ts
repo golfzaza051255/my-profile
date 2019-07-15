@@ -15,6 +15,8 @@ export class MainProfileComponent implements OnInit {
   public address: string;
   public frontEnd: string;
   public backEnd: string;
+  public tools: string;
+
   constructor(
   ) { }
 
@@ -25,6 +27,7 @@ export class MainProfileComponent implements OnInit {
       this.profile.tumbol + ' อำเภอ' + this.profile.amphur + ' จังหวัด' + this.profile.province + ' ' + this.profile.zipCode;
     this.frontEnd = this.skills.frontEnd.angular + ', ' + this.skills.frontEnd.css;
     this.backEnd = this.skills.backEnd.node + ', ' + this.skills.backEnd.ts;
+    this.tools = this.skills.tools.git + ', ' + this.skills.tools.node;
   }
 
 }
