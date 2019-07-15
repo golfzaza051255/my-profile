@@ -5,7 +5,7 @@ export const Profile = {
   titleName: 'นาย',
   firstName: 'วีรพล',
   lastName: 'สันประเดิม',
-  nickName: 'กอล์ฟ',
+  nickName: 'กอล์ฟ (เฉื่อย ต่อ แมว)',
   birthdate: '14/11/2538',
   gender: 'ชาย',
   homeNo: '10',
@@ -13,7 +13,7 @@ export const Profile = {
   floor: '-',
   room: '-',
   moo: '8',
-  mooBan: 'บ้านหนองกุง',
+  mooBan: 'หนองกุง',
   soi: '-',
   street: '-',
   tumbol: 'สมเด็จ',
@@ -28,4 +28,13 @@ export const Profile = {
   expireDate: '-',
 };
 
-
+export const Skills = {
+  frontEnd: {
+    css: 'css',
+    angular: 'angular'
+  },
+  backEnd: {
+    node: 'node.js',
+    ts: '.ts'
+  },
+};

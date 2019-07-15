@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from '../shared/models/profile.model';
+import { Profile, Skills } from '../shared/models/profile.model';
 
 @Component({
   selector: 'app-main-profile',
@@ -9,14 +9,22 @@ import { Profile } from '../shared/models/profile.model';
 export class MainProfileComponent implements OnInit {
   title = 'PROFILE';
   public profile = Profile;
+  public skills = Skills;
   public nameEn: string;
   public nameTh: string;
+  public address: string;
+  public frontEnd: string;
+  public backEnd: string;
   constructor(
   ) { }
 
   ngOnInit() {
-    this.nameEn = this.profile.titleNameEn + this.profile.lastNameEn + ' ' + this.profile.lastNameEn;
-    this.nameTh = this.profile.titleName + this.profile.lastName + ' ' + this.profile.lastName;
+    this.nameEn = this.profile.titleNameEn + this.profile.firstNameEn + ' ' + this.profile.lastNameEn;
+    this.nameTh = this.profile.titleName + this.profile.firstName + ' ' + this.profile.lastName;
+    this.address = this.profile.homeNo + 'หมู่' + this.profile.moo + ' บ้าน' + this.profile.mooBan + ' ตำบล' +
+      this.profile.tumbol + ' อำเภอ' + this.profile.amphur + ' จังหวัด' + this.profile.province + ' ' + this.profile.zipCode;
+    this.frontEnd = this.skills.frontEnd.angular + ', ' + this.skills.frontEnd.css;
+    this.backEnd = this.skills.backEnd.node + ', ' + this.skills.backEnd.ts;
   }
 
 }
