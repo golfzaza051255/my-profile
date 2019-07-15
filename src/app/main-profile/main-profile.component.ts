@@ -7,7 +7,8 @@ import { Profile, Skills } from '../shared/models/profile.model';
   styleUrls: ['./main-profile.component.css']
 })
 export class MainProfileComponent implements OnInit {
-  title = 'PROFILE';
+
+  public title = 'Profile';
   public profile = Profile;
   public skills = Skills;
   public nameEn: string;

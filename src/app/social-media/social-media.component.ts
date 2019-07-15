@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Profile, Skills } from '../shared/models/profile.model';
 
 @Component({
   selector: 'app-social-media',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./social-media.component.css']
 })
 export class SocialMediaComponent implements OnInit {
-  title = 'Social Media';
+
+  public title = 'Social Media';
+  public profile = Profile;
+  public skills = Skills;
+
   constructor() { }
 
   ngOnInit() {
