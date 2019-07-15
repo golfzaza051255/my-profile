@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Profile } from '../shared/models/profile.model';
 
 @Component({
   selector: 'app-main-profile',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainProfileComponent implements OnInit {
   title = 'PROFILE';
-  name = 'Weerapol Sanpradaem';
-  constructor() { }
+  public profile = Profile;
+  public nameEn: string;
+  public nameTh: string;
+  constructor(
+  ) { }
 
   ngOnInit() {
+    this.nameEn = this.profile.titleNameEn + this.profile.lastNameEn + ' ' + this.profile.lastNameEn;
+    this.nameTh = this.profile.titleName + this.profile.lastName + ' ' + this.profile.lastName;
   }
 
 }

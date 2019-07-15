@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MainProfileComponent } from './main-profile/main-profile.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/profile', pathMatch: 'full' },
       { path: 'profile', component: MainProfileComponent },
