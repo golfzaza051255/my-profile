@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainProfileComponent } from './main-profile/main-profile.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { SharedModule } from './shared/shared.module';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainProfileComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,8 @@ import { SharedModule } from './shared/shared.module';
     RouterModule.forRoot([
       { path: '', redirectTo: '/profile', pathMatch: 'full' },
       { path: 'profile', component: MainProfileComponent },
-      { path: 'socisl', component: SocialMediaComponent }
+      { path: 'socisl', component: SocialMediaComponent },
+      { path: 'test', component: TestComponent }
       // , { path: 'about', loadChildren: '../about/about.module#AboutModule' }
       // , { path: 'contact', loadChildren: '../about/about.module#AboutModule' }
     ]),
