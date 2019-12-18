@@ -17,21 +17,30 @@
       <th>D</th>
     </tr>
     <tr>
-      <td>{{skills}} <select>
-          <option *ngFor="let item of number" [value]="item.value">{{item.text}}</option>
-        </select> </td>
-      <td>{{skills}} <select>
-          <option *ngFor="let item of number" [value]="item.value">{{item.text}}</option>
-        </select> </td>
-      <td>{{skills}} <select>
-          <option *ngFor="let item of number" [value]="item.value">{{item.text}}</option>
-        </select> </td>
-      <td>{{skills}} <select>
-          <option *ngFor="let item of number" [value]="item.value">{{item.text}}</option>
-        </select> </td>
+      <td>{{peoples}} {{goa}} {{people}}
+        <select *ngIf="fix">
+          <option *ngFor="let item of testBus" (click)="go()" [value]="item.value">{{item.text}}</option>
+        </select>
+      </td>
+      <td>{{peoples}} {{gob}} {{people}}
+        <select *ngIf="fix">
+          <option *ngFor="let item of testBus" (click)="go()" [value]="item.value">{{item.text}}</option>
+        </select>
+      </td>
+      <td>{{peoples}} {{goc}} {{people}}
+        <select *ngIf="fix">
+          <option *ngFor="let item of testBus" (click)="go()" [value]="item.value">{{item.text}}</option>
+        </select>
+      </td>
+      <td>{{peoples}} {{god}} {{people}}
+        <select *ngIf="fix">
+          <option *ngFor="let item of testBus" (click)="go()" [value]="item.value">{{item.text}}</option>
+        </select>
+      </td>
 
     </tr>
   </table>
 
+  <p>ที่ว่าง : {{number}}</p>
   <button (click)="go()"> Go!! </button>
 </body>
