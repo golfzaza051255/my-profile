@@ -21,7 +21,7 @@ export const Profile = {
   province: 'กาฬสินธุ์',
   zipCode: '46150',
   titleNameEn: 'Mr.',
-  firstNameEn: 'Weerspol',
+  firstNameEn: 'Weerapol',
   lastNameEn: 'Sanpradaem',
   nickNameEn: 'Golf',
   issueDate: '-',
